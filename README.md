@@ -1,2 +1,2 @@
 # Web
-collections of webpages created.
+This repository is the collection of the webpages created by @vaibhavraj10 .
