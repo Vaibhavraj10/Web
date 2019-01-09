@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dating Website</title>
+<style type="text/css">
+	div.face{
+    height:100px;
+    width:98%;
+    border:2px solid black;
+    margin: 5px 5px 10px 5px;
+    padding-left: 10px;
+}
+
+   div.general{
+   	height:200px;
+    width:98%;
+    border:2px solid black;
+    margin: 5px 5px 10px 5px;
+    padding-left: 10px;
+   }
+
+   div.indicators{
+   	height:100px;
+    width:98%;
+    border:2px solid black;
+    margin: 5px 5px 10px 5px;
+    padding-left: 10px;
+   }
+
+   div.contact{
+   	height:210px;
+   	width:98%;
+   	border:2px solid black;
+    margin: 5px 5px 10px 5px;
+    padding-left: 10px;
+   }
+
+#indicators{
+   	width:90px;
+    margin-top:-10px;
+    margin-left:5px;
+    background:white;
+    color:#F5300C;
+   }
+
+#face{
+    width:60px;
+    margin-top:-10px;
+    margin-left:5px;
+    background:white;
+    color:#F5300C;
+}
+
+#general{
+	width:121px;
+    margin-top:-10px;
+    margin-left:5px;
+    background:white;
+    color:#F5300C;
+}
+
+#contact{
+	 width:150px;
+    margin-top:-10px;
+    margin-left:5px;
+    background:white;
+    color:#F5300C;
+}
+
+.text{
+	margin-left: 10px;
+}
+
+.slidecontainer {
+  width: 100%;
+  }
+
+  p {
+  	font-family:Sans-serif;
+  	
+  }
+
+
+
+</style>
+</head>
+<body>
+	<h1> Please Enter Your Details For Dating Website</h1>
+
+	<div class="face">
+		<h5 id="face">Your Face</h6>
+		<p class="text"> 
+
+	    <form method="POST" action="uploadFile" enctype="multipart/form-data">
+        <strong>  Your image:</strong>
+        <input type="file" name="file" />
+        <!--<input type="submit" style="float:right;" value="Upload" /> -->
+        </form>
+        Image preview
+    </div>    
+
+    <div class="general">
+    	<h5 id="general">Your General Details</h5>
+    	<p>
+    		<form action="/action_page.php">
+            Name:
+            <input name="name" type="text" placeholder="example@vaibhav">
+            <br>
+            Gender: 
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female <br>
+            Age: <input type="number" id="myNumber"><br>
+            Age: Date of Birth<input type="date" name="bday"><br>
+            Your favourite color is :
+            <input type="color" name="favcolor" value="#ff0000"><br><br>
+            Your Country: <input name="name" type="text"><br>
+            </form>
+        </p>
+    </div>
+
+    <div class="indicators">
+    	<h5 id="indicators">Your indicators</h5>
+    	<p>
+    		<div class="slidecontainer">
+    		Short
+            <input type="range" min="1" max="100" value="50"> Tall<br>
+            Poor
+            <input type="range" min="1" max="100" value="50"> Rich<br>
+            </div>
+        </p>
+    </div>
+
+    <div class="contact">
+    	<h5 id="contact">Your Contact Information</h5>
+    	<p>
+    		Email:
+            <input name="name" type="text" placeholder="example@xyz.com">
+            <br><br>
+            Contact:
+            <input name="name" type="text"><br><br>
+            Address: 
+            <input name="name" type="text" style="height:50px"><br><br>
+            Methods to contact you: 
+            <input type="radio" name="method" value="email"> Email
+            <input type="radio" name="method" value="whatsapp"> Whatsapp
+            <input type="radio" name="method" value="inappchat"> In app chat<br>
+        </p>
+    </div>
+
+    <p>
+    	<form action="http://google.com">
+        <input type="submit" value="Submit" />
+        </form>
+</body>
+</html>
